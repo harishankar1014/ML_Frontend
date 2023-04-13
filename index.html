@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="action.js"></script>
+</head>
+<body>
+    <h3>Enter model inputs</h3>
+    <form action="/data" method="POST" name="inputForm">
+        <label for="s1">variance</label>
+        <input type="text" id="variance" name="variance" placeholder="Enter variance">
+        <label for="s2">skewness</label>
+        <input type="text" id="skewness" name="skewness" placeholder="Enter skewness">
+        <label for="s3">curtosis</label>
+        <input type="text" id="curtosis" name="curtosis" placeholder="Enter curtosis">
+        <label for="s4">entropy</label>
+        <input type="text" id="entropy"  name="entropy" placeholder="Enter entropy">
+        <input type="submit" name="Submit" id="btn_id" value="submit!">
+    </form>
+    <p id="prediction"></p>
+</body>
+</html>
